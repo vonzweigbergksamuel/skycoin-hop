@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://xr1posp16k63"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_u0tl4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fjl6"]
+bg_color = Color(0.658832, 0.767146, 0.366134, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.141176, 0.141176, 0.141176, 1)
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lk36f"]
+bg_color = Color(0.603922, 0.690196, 0.431373, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.141176, 0.141176, 0.141176, 1)
+border_blend = true
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+shadow_color = Color(0.141176, 0.141176, 0.141176, 1)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u0tl4")
+
+[node name="PlayButton" type="Button" parent="."]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -15.5
+offset_right = 20.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(0.141176, 0.141176, 0.141176, 1)
+theme_override_colors/font_color = Color(0.141176, 0.141176, 0.141176, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_0fjl6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lk36f")
+text = "Play"
