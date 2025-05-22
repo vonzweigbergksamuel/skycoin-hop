@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://brh2vift7jgto"]
+
+[ext_resource type="Script" path="res://components/hazard/hazard_component.gd" id="1_7k7jx"]
+[ext_resource type="Texture2D" uid="uid://cwh0shykmn1r2" path="res://assets/spikes_3.png" id="2_4otm8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gj8h3"]
+size = Vector2(16, 14)
+
+[node name="Spikes3" type="Area2D"]
+script = ExtResource("1_7k7jx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_4otm8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_gj8h3")
